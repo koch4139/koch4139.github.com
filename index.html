@@ -4,8 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <style>
+    /* *{outline: 1px solid red; } */
+    body{margin: 0;}
+    .container{
+      display: flex;
+      justify-content: space-between;
+      background-color: #000;
+      font-size: 1.5em;
+      color: #eee;
+   
+    }
+  
+    ul{
+      list-style-type: none;
+      padding-left: 0;
+      display: flex;
+    }
+    .fa-bars{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: salmon;
+  }
+    .fa-skating:hover{
+    font-size: 3rem;
+    color: pink;
+    transition: 1s;
+  }
+  ul:nth-child(2)>li{
+      margin:0 auto;
+      padding:0 15px;
+    }
+ .box2 >li{
+      padding: 3px;
+    }
+  
+ 
+    @media screen and (max-width:767px){
+      .container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        background-color: skyblue;}
+        .fa-bars{
+          display: block;}
+          ul:nth-child(2){
+            display: flex;
+            flex-direction: column  ;
+        }
+        ul:nth-child(1){
+    
+          justify-content: center;
+        }
+        ul:nth-child(3){
+          justify-content: center;
+        }
+
+    }
+
+  
+
+  </style>
 </head>
 <body>
-  반갑습니다.
+  <div class="container ">
+    <ul class="box1" >
+      <li><i class="fas fa-skating"></i></li>
+      <li>스키장</li>
+    </ul>
+    <ul class="menu">
+      <li>메뉴1</li>
+      <li>메뉴2</li>
+      <li>메뉴3</li>
+      <li>메뉴4</li>
+      <li>메뉴5</li>
+
+    </ul>
+    <ul class="box2">
+      <li><i class="fab fa-instagram"></i></li>
+      <li><i class="fab fa-facebook"></i></li>
+      <li><i class="fab fa-twitter"></i></li>
+    </ul>
+   
+    <i class="fas fa-bars"></i>
+   
+  </div>
+
 </body>
 </html>
